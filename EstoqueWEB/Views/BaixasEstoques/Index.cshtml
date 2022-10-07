@@ -1,0 +1,59 @@
+﻿@model IEnumerable<EstoqueWEB.Models.BaixasEstoque>
+
+@{
+    ViewData["Title"] = "Baixas Estoque";
+}
+
+<h1><b>Baixas Estoque</b></h1>
+
+<p>
+    <a type="button" class="btn btn-success" asp-action="Create">Criar Baixa de Estoque</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DtBaixa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lote)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorPerda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProdutoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DtBaixa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdProduto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lote)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorPerda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProdutoNavigation.IdProduto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdBaixa">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdBaixa">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdBaixa">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

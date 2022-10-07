@@ -1,0 +1,89 @@
+﻿@model EstoqueWEB.Models.EntradasEstoque
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>EntradasEstoque</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdEntrada" />
+            <div class="form-group">
+                <label asp-for="IdProduto" class="control-label"></label>
+                <select asp-for="IdProduto" class="form-control" asp-items="ViewBag.IdProduto"></select>
+                <span asp-validation-for="IdProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeProduto" class="control-label"></label>
+                <input asp-for="NomeProduto" class="form-control" />
+                <span asp-validation-for="NomeProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtdEntrada" class="control-label"></label>
+                <input asp-for="QtdEntrada" class="form-control" />
+                <span asp-validation-for="QtdEntrada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DtEntrada" class="control-label"></label>
+                <input asp-for="DtEntrada" class="form-control" />
+                <span asp-validation-for="DtEntrada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DtUltimaAlteracao" class="control-label"></label>
+                <input asp-for="DtUltimaAlteracao" class="form-control" />
+                <span asp-validation-for="DtUltimaAlteracao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumItensAtual" class="control-label"></label>
+                <input asp-for="NumItensAtual" class="form-control" />
+                <span asp-validation-for="NumItensAtual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecoUn" class="control-label"></label>
+                <input asp-for="PrecoUn" class="form-control" />
+                <span asp-validation-for="PrecoUn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorVenda" class="control-label"></label>
+                <input asp-for="ValorVenda" class="form-control" />
+                <span asp-validation-for="ValorVenda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumNotaFiscal" class="control-label"></label>
+                <input asp-for="NumNotaFiscal" class="form-control" />
+                <span asp-validation-for="NumNotaFiscal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lote" class="control-label"></label>
+                <input asp-for="Lote" class="form-control" />
+                <span asp-validation-for="Lote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdFornecedor" class="control-label"></label>
+                <select asp-for="IdFornecedor" class="form-control" asp-items="ViewBag.IdFornecedor"></select>
+                <span asp-validation-for="IdFornecedor" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Aberto" /> @Html.DisplayNameFor(model => model.Aberto)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

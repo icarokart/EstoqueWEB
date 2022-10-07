@@ -1,0 +1,138 @@
+﻿@model IEnumerable<EstoqueWEB.Models.EntradasEstoque>
+
+@{
+    ViewData["Title"] = "Entradas Estoque";
+}
+
+<h1><b>Entradas Estoque</b></h1>
+
+<p>
+    @*<a asp-action="Create">Criar Entrada de Estoque</a>*@
+    <a type="button" class="btn btn-success" asp-action="Create">Criar Entrada de Estoque</a>
+</p>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdEntrada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DtEntrada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DtUltimaAlteracao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumItensAtual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecoUn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorVenda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumNotaFiscal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lote)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aberto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdFornecedorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProdutoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome_Produto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qtd_Entrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dt_Entrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dt_Ultima_Alteracao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Num_Itens_Atual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecoUn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorVenda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumNotaFiscal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lote)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aberto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFornecedorNavigation.IdFornecedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProdutoNavigation.IdProduto)
+            </td>*@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID Entrada</th>
+            <th scope="col">ID Produto</th>
+            <th scope="col">Nome Produto</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Data de Entrada</th>
+            <th scope="col">Data Ultima Alteração</th>
+            <th scope="col">Nº de Itens Atual</th>
+            <th scope="col">Preço por Unidade</th>
+            <th scope="col">Valor de Venda</th>
+            <th scope="col">Nº Nota Fiscal</th>
+            <th scope="col">Lote</th>
+            <th scope="col">Fornecedor</th>
+            <th scope="col">Aberto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+             <tr>
+                    <td>@item.IdEntrada</td>
+                    <td>@item.IdProduto</td>
+                    <td>@item.NomeProduto</td>
+                    <td>@item.QtdEntrada</td>
+                    <td>@item.DtEntrada</td>
+                    <td>@item.DtUltimaAlteracao</td>
+                    <td>@item.NumItensAtual</td>
+                    <td>@item.PrecoUn</td>
+                    <td>@item.ValorVenda</td>
+                    <td>@item.NumNotaFiscal</td>
+                    <td>@item.Lote</td>
+                    <td>@item.IdFornecedor</td>
+                    <td>@item.Aberto</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdEntrada">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdEntrada">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdEntrada">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

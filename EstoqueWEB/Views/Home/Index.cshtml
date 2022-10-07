@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Press F";
+}
+
+<div class="container">
+    <center><h1 class="display-4">Sistema de Controle de Estoque</h1></center>
+    <br>
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID Produto</th>
+                <th scope="col">Nome do Produto</th>
+                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Preço por Unidade</th>
+                <th scope="col">Lote Atual</th>
+            </tr>
+        </thead>
+        <tbody>
+                @foreach (var item in ViewBag.Home)
+                {
+                    <tr>
+                        <td>@item.IdProduto</td>
+                        <td>@item.NomeProduto</td>
+                        <td>@item.QtdEstoque</td>
+                        <td>@item.PrecoUnd</td>
+                        <td>@item.LoteAtual</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+
+</div>
