@@ -49,8 +49,8 @@ namespace EstoqueWEB.Controllers
         // GET: EntradasEstoques/Create
         public IActionResult Create()
         {
-            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedor");
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto");
+            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedo");
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto");
             return View();
         }
 

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Inserir Entrada de Estoque</h1>
 
 <h4>EntradasEstoque</h4>
 <hr />
@@ -13,73 +13,77 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdProduto" class="control-label"></label>
+                <label asp-for="IdProduto" class="control-label"><b>Produto:</b></label>
                 <select asp-for="IdProduto" class ="form-control" asp-items="ViewBag.IdProduto"></select>
             </div>
-            <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="NomeProduto" class="control-label"></label>
                 <input asp-for="NomeProduto" class="form-control" />
                 <span asp-validation-for="NomeProduto" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
-                <label asp-for="QtdEntrada" class="control-label"></label>
+                <label asp-for="QtdEntrada" class="control-label"><b>Quantidade de Entrada:</b></label>
                 <input asp-for="QtdEntrada" class="form-control" />
                 <span asp-validation-for="QtdEntrada" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DtEntrada" class="control-label"></label>
+                <label asp-for="DtEntrada" class="control-label"><b>Data da Entrada:</b></label>
                 <input asp-for="DtEntrada" class="form-control" />
                 <span asp-validation-for="DtEntrada" class="text-danger"></span>
             </div>
-            <div class="form-group">
+           @* <div class="form-group">
                 <label asp-for="DtUltimaAlteracao" class="control-label"></label>
                 <input asp-for="DtUltimaAlteracao" class="form-control" />
                 <span asp-validation-for="DtUltimaAlteracao" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
-                <label asp-for="NumItensAtual" class="control-label"></label>
+                <label asp-for="NumItensAtual" class="control-label"><b>Número de Itens:</b></label>
                 <input asp-for="NumItensAtual" class="form-control" />
                 <span asp-validation-for="NumItensAtual" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrecoUn" class="control-label"></label>
+                <label asp-for="PrecoUn" class="control-label"><b>Preço por Unidade:</b></label>
                 <input asp-for="PrecoUn" class="form-control" />
                 <span asp-validation-for="PrecoUn" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ValorVenda" class="control-label"></label>
+                <label asp-for="ValorVenda" class="control-label"><b>Valor de Venda:</b></label>
                 <input asp-for="ValorVenda" class="form-control" />
                 <span asp-validation-for="ValorVenda" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NumNotaFiscal" class="control-label"></label>
+                <label asp-for="NumNotaFiscal" class="control-label"><b>Número da Nota Fiscal:</b></label>
                 <input asp-for="NumNotaFiscal" class="form-control" />
                 <span asp-validation-for="NumNotaFiscal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Lote" class="control-label"></label>
+                <label asp-for="Lote" class="control-label"><b>Lote:</b></label>
                 <input asp-for="Lote" class="form-control" />
                 <span asp-validation-for="Lote" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdFornecedor" class="control-label"></label>
+                <label asp-for="IdFornecedor" class="control-label"><b>Fornecedor:</b></label>
                 <select asp-for="IdFornecedor" class ="form-control" asp-items="ViewBag.IdFornecedor"></select>
             </div>
-            <div class="form-group form-check">
+            @*<div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Aberto" /> @Html.DisplayNameFor(model => model.Aberto)
                 </label>
-            </div>
+            </div>*@
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
+            <br />
+            <div>
+                <a type="button" class="btn btn-danger" asp-action="Index">Voltar</a>
+            </div>
+
+
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

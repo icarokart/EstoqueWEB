@@ -8,97 +8,97 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EstoqueWEB
 build_property.RootNamespace = EstoqueWEB
-build_property.ProjectDir = C:\Users\Icaro\source\repos\EstoqueWEB\EstoqueWEB\
+build_property.ProjectDir = C:\Users\Icaro\Documents\GitHub\EstoqueWEB\EstoqueWEB\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Icaro\source\repos\EstoqueWEB\EstoqueWEB
+build_property.MSBuildProjectDirectory = C:\Users\Icaro\Documents\GitHub\EstoqueWEB\EstoqueWEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Create.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpeGFzRXN0b3F1ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Delete.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpeGFzRXN0b3F1ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Details.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpeGFzRXN0b3F1ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Edit.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpeGFzRXN0b3F1ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Index.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/BaixasEstoques/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpeGFzRXN0b3F1ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Create.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNFc3RvcXVlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Delete.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNFc3RvcXVlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Details.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNFc3RvcXVlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Edit.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNFc3RvcXVlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Index.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/EntradasEstoques/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYXNFc3RvcXVlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/Home/Index.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/Home/Privacy.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Create.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FpZGFzRXN0b3F1ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Delete.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FpZGFzRXN0b3F1ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Details.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FpZGFzRXN0b3F1ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Edit.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FpZGFzRXN0b3F1ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Index.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/SaidasEstoques/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FpZGFzRXN0b3F1ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/Shared/Error.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/_ViewImports.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/_ViewStart.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Icaro/source/repos/EstoqueWEB/EstoqueWEB/Views/Shared/_Layout.cshtml]
+[C:/Users/Icaro/Documents/GitHub/EstoqueWEB/EstoqueWEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0hayd0upar
