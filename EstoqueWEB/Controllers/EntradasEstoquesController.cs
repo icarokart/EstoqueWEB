@@ -21,8 +21,8 @@ namespace EstoqueWEB.Controllers
         // GET: EntradasEstoques
         public async Task<IActionResult> Index()
         {
-            //ViewBag.EntEst = _context.EntradasEstoques.ToList();
             var controle_EstoqueContext = _context.EntradasEstoques.Include(e => e.IdFornecedorNavigation).Include(e => e.IdProdutoNavigation);
+            ViewBag.Controle_EstoqueContext = _context.EntradasEstoques.ToListAsync();
             return View(await controle_EstoqueContext.ToListAsync());
         }
 
@@ -49,8 +49,8 @@ namespace EstoqueWEB.Controllers
         // GET: EntradasEstoques/Create
         public IActionResult Create()
         {
-            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedo");
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto");
+            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedor");
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto");
             return View();
         }
 
