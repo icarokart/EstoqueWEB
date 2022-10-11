@@ -12,6 +12,6 @@ namespace EstoqueWEB.Models
         public int QtdSaida { get; set; }
         public decimal PrecoVendaUn { get; set; }
 
-        public virtual Produto IdProdutoNavigation { get; set; } = null!;
+        public virtual Produto? IdProdutoNavigation { get; set; } = null!;
     }
 }

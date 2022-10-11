@@ -1,107 +1,60 @@
 ﻿@model IEnumerable<EstoqueWEB.Models.EntradasEstoque>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Entradas Estoque";
 }
 
-<h1>Index</h1>
+<h1><b>Entradas Estoque</b></h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @*<a asp-action="Create">Criar Entrada de Estoque</a>*@
+    <a type="button" class="btn btn-success" asp-action="Create">Criar Entrada de Estoque</a>
 </p>
-<table class="table">
+
+<table class="table table-striped">
     <thead>
         <tr>
-            <th 
-                scope="col">NomeProduto
-            </th>
-            <th
-                scope="col">QtdEntrada
-            </th>
-            <th>
-               scope="col">DtEntrada
-            </th>
-            <th
-                scope="col">DtUltimaAlteracao
-            </th>
-            <th
-                scope="col">NumItensAtual
-            </th>
-            <th
-               scope="col">PrecoUn
-            </th>
-            <th
-               scope="col">ValorVenda
-            </th>
-            <th
-               scope="col">NumNotaFiscal
-            </th>
-            <th
-                scope="col">Lote
-            </th>
-            <th
-              scope="col">Aberto
-            </th>
-            <th
-                scope="col">IdFornecedorNavigation
-            </th>
-            <th
-                scope="col">IdProdutoNavigation
-            </th>
-            <th></th>
+            <th scope="col">Produto</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Data de Entrada</th>
+            <th scope="col">Última Alteração</th>
+            <th scope="col">Nº Itens Atual</th>
+            <th scope="col">Preço Un.</th>
+            <th scope="col">Valor de Venda</th>
+            <th scope="col">Nota Fiscal</th>
+            <th scope="col">Lote</th>
+            <th scope="col">Fornecedor</th>
+            <th scope="col">Aberto</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.ToList()) {
-        <tr>
-@*              <td>@item.IdProduto</td>
-                        <td>@item.NomeProduto</td>
-                        <td>@item.QtdEstoque</td>
-                        <td>@item.PrecoUnd</td>
-                        <td>@item.LoteAtual</td>*@
-            <td>
-                @item.NomeProduto
-            </td>
-            <td>
-                @item.QtdEntrada
-            </td>
-            <td>
-                @item.DtEntrada
-            </td>
-            <td>
-                @item.DtUltimaAlteracao
-            </td>
-            <td>
-               @item.NumItensAtual
-            </td>
-            <td>
-                @item.PrecoUn
-            </td>
-            <td>
-                @item.ValorVenda
-            </td>
-            <td>
-               @item.NumNotaFiscal
-            </td>
-            <td>
-               @item.Lote
-            </td>
-            <td>
-               @item.Aberto
-            </td>
-            <td>
-                @item.IdFornecedorNavigation.IdFornecedor
-            </td>
-            <td>
-               @item.IdProdutoNavigation.IdProduto
-            </td>         
+        @foreach (var item in Model)
+        {
+             <tr>
+                    <td>@item.IdProdutoNavigation.NomeProduto</td>
+                    <td>@item.QtdEntrada</td>
+                    <td>@item.DtEntrada</td>
+                    <td>@item.DtUltimaAlteracao</td>
+                    <td>@item.NumItensAtual</td>
+                    <td>@item.PrecoUn</td>
+                    <td>@item.ValorVenda</td>
+                    <td>@item.NumNotaFiscal</td>
+                    <td>@item.Lote</td>
+                    <td>@item.IdFornecedor</td>
+                    @if(item.Aberto)
+                    {
+                    <td> <img src="~/imagens/AbertoSm.png" /> </td>
 
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEntrada">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEntrada">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEntrada">Delete</a>
-            </td>
-        </tr>
-}
+                    }else
+                    {
+                    <td><img src="~/imagens/FechadoSm.png" /></td>
+                    }
+                     <td>
+@*                        <a type="button" class="btn btn-warning" asp-action="Edit" asp-route-id="@item.IdEntrada">Edit</a> |
+*@                        <a type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.IdEntrada">Detalhes</a> |
+                        <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.IdEntrada">Excluir</a>
+                    </td>
+            </tr>
+        }
     </tbody>
 </table>

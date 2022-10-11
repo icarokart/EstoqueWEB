@@ -12,6 +12,6 @@ namespace EstoqueWEB.Models
         public string? Lote { get; set; }
         public decimal? ValorPerda { get; set; }
 
-        public virtual Produto IdProdutoNavigation { get; set; } = null!;
+        public virtual Produto? IdProdutoNavigation { get; set; } = null!;
     }
 }

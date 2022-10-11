@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/EstoqueWEB.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
@@ -44,11 +45,15 @@
         </nav>
 
 
-    <div class="container">
+@*    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+    </div>*@
+    <div class="container-fluid">
+                @RenderBody()
+        </div>
+
 
     <footer class="border-top footer text-muted text-center">
         <div class="container">

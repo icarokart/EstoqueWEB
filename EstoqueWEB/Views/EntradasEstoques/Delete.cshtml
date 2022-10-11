@@ -1,14 +1,13 @@
 ﻿@model EstoqueWEB.Models.EntradasEstoque
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Entradas Estoque - Excluir Registro";
 }
 
-<h1>Delete</h1>
+<h1>Excluir Registro</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h4 style="color:red"><i>Tem certeza que deseja excluir este registro?</i></h4>
 <div>
-    <h4>EntradasEstoque</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -87,7 +86,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdEntrada" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a type="button" class="btn btn-secondary" asp-action="Index">Voltar</a> |
+        <input type="submit" value="Excluir" class="btn btn-primary" /> 
     </form>
 </div>

@@ -48,7 +48,7 @@ namespace EstoqueWEB.Controllers
         // GET: SaidasEstoques/Create
         public IActionResult Create()
         {
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto");
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto");
             return View();
         }
 
@@ -82,7 +82,7 @@ namespace EstoqueWEB.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto", saidasEstoque.IdProduto);
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto", saidasEstoque.IdProduto);
             return View(saidasEstoque);
         }
 

@@ -22,7 +22,6 @@ namespace EstoqueWEB.Controllers
         public async Task<IActionResult> Index()
         {
             var controle_EstoqueContext = _context.EntradasEstoques.Include(e => e.IdFornecedorNavigation).Include(e => e.IdProdutoNavigation);
-            ViewBag.Controle_EstoqueContext = _context.EntradasEstoques.ToListAsync();
             return View(await controle_EstoqueContext.ToListAsync());
         }
 
@@ -49,8 +48,8 @@ namespace EstoqueWEB.Controllers
         // GET: EntradasEstoques/Create
         public IActionResult Create()
         {
-            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedor");
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto");
+            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "NomeFornecedor");
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto");
             return View();
         }
 
@@ -67,8 +66,8 @@ namespace EstoqueWEB.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "IdFornecedor", entradasEstoque.IdFornecedor);
-            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "IdProduto", entradasEstoque.IdProduto);
+            ViewData["IdFornecedor"] = new SelectList(_context.Fornecedores, "IdFornecedor", "NomeFornecedor", entradasEstoque.IdFornecedor);
+            ViewData["IdProduto"] = new SelectList(_context.Produtos, "IdProduto", "NomeProduto", entradasEstoque.IdProduto);
             return View(entradasEstoque);
         }
 

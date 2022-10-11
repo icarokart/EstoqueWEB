@@ -14,7 +14,8 @@
             @Html.DisplayNameFor(model => model.NomeProduto)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeProduto)
+            @Html.DisplayFor(model => Model.IdProdutoNavigation.NomeProduto) 
+            @*model.NomeProduto)*@
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.QtdEntrada)
@@ -85,6 +86,7 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdEntrada">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    @*<a asp-action="Edit" asp-route-id="@Model?.IdEntrada">Edit</a> |*@
+    <a type="button" class="btn btn-secondary" asp-action="Index">Voltar</a>
+    @* <a asp-action="Index">Back to List</a>*@
 </div>

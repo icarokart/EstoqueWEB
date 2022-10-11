@@ -1,50 +1,48 @@
 ﻿@model EstoqueWEB.Models.SaidasEstoque
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Saídas de Estoque";
 }
 
-<h1>Create</h1>
+<h1><b>Saídas de Estoque</b></h1>
 
-<h4>SaidasEstoque</h4>
+<h4>Press F - Gestão de Estoque</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdProduto" class="control-label"></label>
+                <label asp-for="IdProduto" class="control-label"><b>Produto:</b></label>
                 <select asp-for="IdProduto" class ="form-control" asp-items="ViewBag.IdProduto"></select>
             </div>
             <div class="form-group">
-                <label asp-for="DtSaida" class="control-label"></label>
+                <label asp-for="DtSaida" class="control-label"><b>Data de Saída:</b></label>
                 <input asp-for="DtSaida" class="form-control" />
                 <span asp-validation-for="DtSaida" class="text-danger"></span>
             </div>
-            <div class="form-group">
+@*            <div class="form-group">
                 <label asp-for="NomeProduto" class="control-label"></label>
                 <input asp-for="NomeProduto" class="form-control" />
                 <span asp-validation-for="NomeProduto" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
-                <label asp-for="QtdSaida" class="control-label"></label>
+                <label asp-for="QtdSaida" class="control-label"><b>Quantidade de Itens:</b></label>
                 <input asp-for="QtdSaida" class="form-control" />
                 <span asp-validation-for="QtdSaida" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrecoVendaUn" class="control-label"></label>
+                <label asp-for="PrecoVendaUn" class="control-label"><b>Preço de Venda:</b></label>
                 <input asp-for="PrecoVendaUn" class="form-control" />
                 <span asp-validation-for="PrecoVendaUn" class="text-danger"></span>
             </div>
+             <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <a type="button" class="btn btn-secondary" asp-action="Index">Voltar</a>
+                <input type="submit" value="Inserir" class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

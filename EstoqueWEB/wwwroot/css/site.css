@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color:lightsteelblue;
+    margin-bottom: 60px;
+    /*background-image: url('../imagens/background_sge.jpg');*/
 }
  
 .nav-item {

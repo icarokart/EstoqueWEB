@@ -1,12 +1,12 @@
 ﻿@model EstoqueWEB.Models.SaidasEstoque
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Saídas Estoque - Editar";
 }
 
-<h1>Edit</h1>
+<h1>Editar Saída de Estoque</h1>
 
-<h4>SaidasEstoque</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,27 +14,27 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdSaida" />
             <div class="form-group">
-                <label asp-for="IdProduto" class="control-label"></label>
+                <label asp-for="IdProduto" class="control-label"><b>Produto:</b></label>
                 <select asp-for="IdProduto" class="form-control" asp-items="ViewBag.IdProduto"></select>
                 <span asp-validation-for="IdProduto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DtSaida" class="control-label"></label>
+                <label asp-for="DtSaida" class="control-label"><b>Data da Saída:</b></label>
                 <input asp-for="DtSaida" class="form-control" />
                 <span asp-validation-for="DtSaida" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="NomeProduto" class="control-label"></label>
+@*            <div class="form-group">
+                <label asp-for="NomeProduto" class="control-label"><b></b></label>
                 <input asp-for="NomeProduto" class="form-control" />
                 <span asp-validation-for="NomeProduto" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
-                <label asp-for="QtdSaida" class="control-label"></label>
+                <label asp-for="QtdSaida" class="control-label"><b>Quantidade de Produtos:</b></label>
                 <input asp-for="QtdSaida" class="form-control" />
                 <span asp-validation-for="QtdSaida" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrecoVendaUn" class="control-label"></label>
+                <label asp-for="PrecoVendaUn" class="control-label"><b>Preço de Venda:</b></label>
                 <input asp-for="PrecoVendaUn" class="form-control" />
                 <span asp-validation-for="PrecoVendaUn" class="text-danger"></span>
             </div>
