@@ -17,10 +17,11 @@ namespace EstoqueWEB.Controllers
         }
 
         public IActionResult Index()
-        {   
+        {
             ViewBag.Home = _context.TotalProdutosEstoques.ToList();
             return View();
         }
+
 
         public IActionResult CadastrarProdutos()
         {

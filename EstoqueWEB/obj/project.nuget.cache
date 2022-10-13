@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ubb0QfVkraeHaonawAzygDxbJ9oYhxanmNMJ/71ILc4Xf78uBjnqpbXqPtY3ddiuVlBnI+qElnhyZAFlvFpo7Q==",
+  "dgSpecHash": "ddOII83YO9nMXguDgS4q8EsTe7vn1BGSzdfGTI3pK6sqBOVZ4J3r7zZb4nY7w+N6pW9s2ziGinEWYdTngq5FuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Icaro\\source\\repos\\EstoqueWEB2\\EstoqueWEB\\EstoqueWEB.csproj",
+  "projectFilePath": "C:\\Users\\Icaro\\Documents\\GitHub\\EstoqueWEB\\EstoqueWEB\\EstoqueWEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Icaro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Icaro\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
